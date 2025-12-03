@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# How to Run the Project Locally
 
-## Getting Started
+This guide explains how to run the **aos-office-space** project on your computer.
+Choose the option that matches your situation.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 1. If the project folder is already on your computer
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(Your project is already on your Desktop inside a folder named **aos-office-space**)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In this case, you do NOT need to download anything.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Steps:
 
-## Learn More
+- Go to your Desktop and find the folder named **aos-office-space**.
+- Right-click the folder.
+- Select **Open with VS Code**.
+   * If you don’t see it immediately, click **More options** → **Open with VS Code**.
+- VS Code will open the project.
+- Press **Ctrl + J** to open the terminal inside VS Code.
+- In the terminal, run the following commands one by one. To run a command just copy it and press enter after paste it inside the terminal.
+- If you change anything inside your GitHub repository then execute this command first to get the latest version:
+   ```
+   git pull
+   ```
+- Execute this command to run the project locally:
+   ```
+   npm run dev
+   ```
+- After a few seconds, the project will start running.
+- Open your browser and go to: **localhost:3000**
 
-To learn more about Next.js, take a look at the following resources:
+Your website will appear there.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 2. If you DO NOT have the project folder on your computer
 
-## Deploy on Vercel
+Follow these steps to download and run it:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Open the GitHub repository page.
+- Click the green **Code** button.
+- Click **Download ZIP**.
+- Extract (unzip) the downloaded ZIP file.
+- Right-click the extracted **aos-office-space** folder and select **Open with VS Code**.
+   * If you don’t see it immediately, click **More options** → **Open with VS Code**.
+- VS Code will open the project.
+- Press **Ctrl + J** to open the terminal inside VS Code.
+- In the terminal, run the following commands one by one. To run a command just copy it and press enter after paste it inside the terminal.
+- To install project dependencies:
+   ```
+   npm install
+   ```
+- After installation finishes, execute this command to run the project locally:
+   ```
+   npm run dev
+   ```
+- After a few seconds, the project will start running.
+- Open your browser and go to: **localhost:3000**
+
+Your website will appear there.
