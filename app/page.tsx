@@ -1,9 +1,17 @@
-const HomePage = () => {
-  return (
-    <main>
-      <h1 className="text-2xl text-center">AOS - Home Page</h1>
-    </main>
-  )
-}
+import CtaSection from "@/components/home/CtaSection";
+import DepartmentsGrid from "@/components/home/DepartmentsGrid";
+import Hero from "@/components/home/Hero";
+import HowItWorks from "@/components/home/HowItWorks";
+import PageShell from "@/components/layout/PageShell";
 
-export default HomePage;
+
+export default function HomePage() {
+  return (
+    <PageShell>
+      <Hero />
+      <DepartmentsGrid />
+      <HowItWorks />
+      <CtaSection />
+    </PageShell>
+  );
+}

@@ -1,1 +1,61 @@
 @import "tailwindcss";
+
+/* 2) Define your AOS design tokens (colors, radius, shadows, etc.) */
+@theme {
+  /* Colors -> become bg-aos-bg, text-aos-bg, border-aos-bg, etc. */
+  --color-aos-bg: #050509;
+  --color-aos-surface: #0c0c12;
+  --color-aos-surface-alt: #131320;
+  --color-aos-border: #232336;
+  --color-aos-primary: #2f6bff;
+  --color-aos-primary-soft: #2942ff;
+  --color-aos-accent: #b05cff;
+  --color-aos-text: #f5f5ff;
+  --color-aos-muted: #9ca3af;
+
+  /* Radius -> rounded-3xl */
+  --radius-3xl: 1.75rem;
+
+  /* Shadows -> shadow-aos-card, shadow-aos-soft */
+  --shadow-aos-card: 0 24px 80px rgba(0, 0, 0, 0.65);
+  --shadow-aos-soft: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* 3) Global base styles */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-aos-bg text-aos-text antialiased;
+}
+
+/* 4) Custom utilities using @utility (Tailwind v4 way) */
+
+/* Glass panel card */
+@utility aos-glass {
+  @apply bg-aos-surface/80 border border-aos-border/80 shadow-aos-card backdrop-blur-xl;
+}
+
+/* Max-width layout container */
+@utility aos-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Vertical section spacing */
+@utility aos-section {
+  @apply py-10 sm:py-14 lg:py-20;
+}
+
+/* Gradient text utility */
+@utility aos-gradient-text {
+  background: linear-gradient(
+    120deg,
+    var(--color-aos-primary),
+    var(--color-aos-accent)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* (Optional) You can add more custom utilities exactly like this */
